@@ -33,7 +33,7 @@ function Viewpage(){
   useEffect(()=>{
       getSpecificContent();
   
-  },[]);
+  });
     return(
     <div className="container my-5">
         <div className="row justify-content-center">
@@ -47,7 +47,7 @@ function Viewpage(){
      <h6 className="page-heading">Language: {language}</h6>
      <p>{description}</p>
  
-     <a href={link} className="btn btn-outline-danger btn-block" target="_blank" ><i className="fa fa-download" aria-hidden="true" ></i>&nbsp; DOWNLOAD</a>
+     <a href={link} className="btn btn-outline-danger btn-block" target="_blank" rel="noreferrer"><i className="fa fa-download" aria-hidden="true" ></i>&nbsp; DOWNLOAD</a>
      <div className="share-div mt-3 mb-3">
                 <h5>Share To :</h5>
                 <WhatsappShareButton
