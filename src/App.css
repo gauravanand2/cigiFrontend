@@ -1,0 +1,392 @@
+@font-face {
+  font-family: 'heading-font';
+  src: url('./font/OPTIMA_B.TTF');
+
+}
+@font-face {
+  font-family: 'web-font';
+  src: url('./font/Signoria\ Bold.ttf');
+
+}
+@font-face {
+  font-family: 'regular-font';
+  src: url('./font/OPTIMA.TTF');
+
+}
+@font-face {
+  font-family: 'nav-font';
+  src: url('./font/Optima\ Medium.ttf');
+
+}
+.App{
+  font-family:regular-font;
+}
+.nav-text{
+  font-family: nav-font;
+}
+.web-heading{
+  font-family: web-font;
+}
+.page-heading{
+  font-family: heading-font;
+}
+
+.btn-danger{
+  background-color: #980106;
+  border-color: #980106;
+}
+.btn-danger.dwnld{
+  width: 100%;
+}
+
+@media(max-width:410px){
+  .page-header{
+    padding: 2.5rem!important;
+  }
+}
+.navbar-brand {
+  text-align: center;
+}
+.movie-card{
+  transition: ease-in-out 700ms;
+
+}
+.movie-card p{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie-card img{
+  
+  height: 240px;
+  object-fit: scale-down;
+}
+.movie-card:hover{
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+  
+}
+@media(max-width:500px){
+  .movie-card:hover{
+    box-shadow: none;
+    
+  }
+}
+.navbar > .active > a {
+                color: red;
+            }
+/* Header */
+.page-header {
+  text-align: center;
+  color: #ffffff;
+  padding: 5rem;
+  background-image: url(./images/footer-bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+}
+
+/* Top Side Ad. */
+div.Ad {
+  border: 3px solid black;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  align-items: center;
+  width: 50%;
+  height: 10px;
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:rgba(255,255,255,0.8);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+color: #ffffff;
+}
+
+
+div.b {
+  /* Left Side Ad. */
+  position: absolute;
+  left: auto;
+  width: 130px;
+  height: 380px;
+  border: 3px solid blue;
+  padding: 10px;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+
+/* Right Side Ad. */
+div.a {
+  position: absolute;
+  right: 0;
+  width: 130px;
+  height: 380px;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/* Card */
+
+
+.form-control {
+  border-radius: 15px;
+}
+.btn {
+  border-radius: 15px;
+}
+
+.topnav input[type=text] {
+  float: inherit;
+  padding: 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left: 1000px;
+  font-size: 17px;
+}
+/* footer */
+.mobile-footer{
+  display: none;
+}
+.page-footer{
+  background-image: url(./images/footer-bg.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.page-footer ul{
+  list-style: none;
+}
+.page-footer h3{
+  color: #ffffff;
+}
+
+.page-footer i{
+  font-size: 32px;
+}
+
+
+
+
+/* Footer Links */
+.page-footer a{
+  color: rgba(255,255,255,0.8);
+  padding: 5px;
+  font-size: 1rem;
+}
+@media(max-width:768px){
+  .page-footer h3{
+    font-size: 1.5rem;
+  }
+}
+@media(max-width:546px){
+  .page-footer h3{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width:440px){
+  .page-footer h3{
+    font-size: 1rem;
+  }
+  .page-footer a{
+    font-size: 0.8rem;
+  }
+}
+@media(max-width:440px){
+  .web-footer{
+    display: none;
+  }
+  .mobile-footer {
+    display: block;
+  }
+}
+.page-footer a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-footer h3{
+  font-size: 1.5rem;
+}
+.mobile-footer i{
+  font-size: 1.5rem;
+}
+.footer-copyright a{
+  text-transform: uppercase;
+}
+.copyright {
+  text-align: center;
+  color:#ffffff;
+}
+
+@media(max-width:1204px){
+  div.a{
+    display: none;
+  }
+  div.b{
+    display: none;
+  }
+}
+
+@media(max-width:344px){
+  .card-body{
+    padding: 1px;
+  }
+}
+
+.icons.footer-2 a i{
+  font-size:  32px;
+}
+
+/*login form*/
+.form-container{
+	border-radius: 10px;
+	padding: 30px;
+}
+
+
+
+.form-container{
+	background: url("./images/footer-bg.jpg");
+  background-size: 100% 100%;
+  color: #fcecdd;
+  width:40%;
+}
+@media(max-width:768px){
+  .form-container{
+    width: 70%;
+  }
+}
+
+.btn.login{
+  background-color: #fcecdd;
+}
+
+.btn.login:hover{
+  background-color: #980606;
+  color: white;
+}
+
+/*dashboard*/
+
+.dashboard a{
+  text-decoration: none;
+}
+.dashboard .card-title{
+  font-weight: bold;
+  text-align: center;
+  color: grey;
+}
+.dashboard .btn{
+  font-weight: bold;
+  padding: 14px 40px;
+  border-radius: 30px;
+}
+
+.dashboard .card{
+  border: none;
+  border-radius: 10%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ 
+}
+.dashboard .dash-column{
+  column-gap: 30px;
+}
+@media(max-width:768px){
+  .dashboard .dash-column.adjust{
+    margin-top: 1.6rem;
+  }
+}
+@media(max-width:575px){
+  .dashboard .dash-column{
+    margin-top: 1.6rem;
+  }
+}
+@media(max-width:991px){
+  .dashboard .card img{
+    width: 40%!important;
+  }
+}
+.dashboard .card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+.dashboard .card:hover .card-title{
+  color: #980606;
+}
+@media(max-width:344px){
+  .dashboard  .card-body{
+    padding: 10px;
+  }
+}
+
+.dashboard .card img{
+  width:20%;
+}
+.log-out img{
+  width: 2rem;
+}
+
+
+/* add */
+
+.add{
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px !important;
+}
+.add-container.form-check{
+  font-weight: bold;
+  padding-left: 20%!important;
+}
+
+.add-container{
+  background-image: url("./images/footer-bg.jpg");
+  color: white!important;
+  background-size: 100% 100%;
+  width: 50% !important;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 30px;
+
+}
+
+@media(max-width:500px){
+  .add-container{
+    width:80%!important;
+  }
+}
+
+.btn.add-btn{
+  width: 100%;
+}
+
+
+/*delete and modify*/
+
+.modify .movie-image{
+  height: 40px;
+  object-fit: scale-down;
+}
+
+.modify th,.modify td{
+  font-size: 1rem;
+
+}
+
+
+.modify thead , .modify tr:hover {
+  background-image: url("./images/footer-bg.jpg");
+          color: white!important;
+           background-size: 100% 100%;
+           opacity: 0.9;
+           cursor: pointer;
+
+       }
+ .sharelink{
+        margin-left: 1rem;
+      }
+      
