@@ -35,7 +35,7 @@ function AddMovie(){
           formData.append('pic',pic);
           formData.append('year',year);
           formData.append('language',language);
-          Axios.post('https://cigi.games/admin/add',formData,{
+          Axios.post('https://cigi.games/api/admin/add',formData,{
             headers:{
               'Content-Type':'multipart/form-data'
             }

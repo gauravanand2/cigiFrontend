@@ -7,7 +7,7 @@ function Movies(){
     
    const getNewData=()=>{
        
-   Axios.get("https://cigi.games/movies")
+   Axios.get("https://cigi.games/api/movies")
    .then((res)=>{
        const alldata=res.data.result;
        setNewdata(Object.values(alldata));

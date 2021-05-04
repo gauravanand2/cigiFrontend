@@ -16,7 +16,7 @@ function Viewpage(){
   var id=window.location.pathname.replace("/download/:","");
   function getSpecificContent(){
       var id=window.location.pathname.replace("/download/:","");
-      Axios.get(`https://cigi.games/download/:${id}`).then((res)=>{
+      Axios.get(`https://cigi.games/api/download/:${id}`).then((res)=>{
           const data=res.data.result[0];
           setName(data.name);
           setDescription(data.description);

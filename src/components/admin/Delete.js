@@ -8,19 +8,21 @@ function Delete(){
     
     const getStockData=()=>{
         
-    Axios.get("https://cigi.games/admin/check")
+    Axios.get("https://cigi.games/api/admin/check")
     .then((res)=>{
         const alldata=res.data.result;
+
         setStockdata(Object.values(alldata));
        
-    })
+    });
+   
     }
     function DeleteRecord(event,val){
       event.preventDefault();
       const id=val.id;    
      console.log(id);
       if(window.confirm(`Are your sure you want to Delete ${val.name} !!!`)){
-      Axios.delete(`https://cigi.games/admin/delete/:${id}`,
+      Axios.delete(`https://cigi.games/api/admin/delete/:${id}`,
       {params: { id: id } }
    
     ).then((response)=>{
