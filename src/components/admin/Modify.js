@@ -10,7 +10,7 @@ function Modify(props){
     
     const getStockData=()=>{
         
-    Axios.get("https://cigi.herokuapp.com/admin/check")
+    Axios.get("http://cigi.games/admin/check")
     .then((res)=>{
         const alldata=res.data.result;
         setStockdata(Object.values(alldata));

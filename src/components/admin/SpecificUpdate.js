@@ -13,7 +13,7 @@ function SpecificUpdate(props){
 
     const getSpecificData=()=>{
         var id=window.location.pathname.replace("/admin/modify/:","");
-        Axios.get(`https://cigi.herokuapp.com/admin/modify/:${id}`).then((res)=>{
+        Axios.get(`http://cigi.games/admin/modify/:${id}`).then((res)=>{
             const result=res.data.result[0];
             setName(result.name);
             setType(result.type);
@@ -63,7 +63,7 @@ function SpecificUpdate(props){
           formData.append('description',description);
           formData.append('category',category);
         var id=window.location.pathname.replace("/admin/modify/:","");
-        Axios.post(`https://cigi.herokuapp.com/admin/modify/${id}`,formData
+        Axios.post(`http://cigi.games/admin/modify/${id}`,formData
             
               
           ).then ((result)=> {alert("your data is updated");

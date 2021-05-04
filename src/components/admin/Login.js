@@ -12,7 +12,7 @@ function Login(props){
       alert("Please Enter Your Username And Password");
     }
     else{
-      Axios.post("https://cigi.herokuapp.com/admin/login-form",{
+      Axios.post("http://cigi.games/admin/login-form",{
         user:userName,
         password:password
       }).then((response)=>{

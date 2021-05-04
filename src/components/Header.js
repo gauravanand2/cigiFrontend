@@ -18,14 +18,14 @@ function Header(props){
       alert("Please Enter Your Username And Password");
     }
     else{
-      Axios.post("https://cigi.herokuapp.com/add-subscriber",{
+      Axios.post("http://cigi.games/add-subscriber",{
         email:userEmail
       }).then((resposne)=>{
           alert("Subscribed!!!!!!!!!");
           setUserEmail("");
       })
     }
-    Axios.post("https://cigi.herokuapp.com/add-subscriber",{email:userEmail})
+    Axios.post("http://cigi.games/add-subscriber",{email:userEmail})
   }
     return(
         <div className="ab-container">

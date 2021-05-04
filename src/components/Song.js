@@ -7,7 +7,7 @@ function Song(){
     
    const getNewData=()=>{
        
-   Axios.get("https://cigi.herokuapp.com/songs")
+   Axios.get("http://cigi.games/songs")
    .then((res)=>{
        const alldata=res.data.result;
        setNewdata(Object.values(alldata));

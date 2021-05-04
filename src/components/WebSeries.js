@@ -7,7 +7,7 @@ function WebSeries(){
     
    const getNewData=()=>{
        
-   Axios.get("https://cigi.herokuapp.com/web-series")
+   Axios.get("http://cigi.games/web-series")
    .then((res)=>{
        const alldata=res.data.result;
        setNewdata(Object.values(alldata));

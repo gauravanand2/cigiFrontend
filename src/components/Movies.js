@@ -7,7 +7,7 @@ function Movies(){
     
    const getNewData=()=>{
        
-   Axios.get("https://cigi.herokuapp.com/movies")
+   Axios.get("http://cigi.games/movies")
    .then((res)=>{
        const alldata=res.data.result;
        setNewdata(Object.values(alldata));

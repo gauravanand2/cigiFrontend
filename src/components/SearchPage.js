@@ -10,7 +10,7 @@ import Axios from 'axios';
     const getNewData=()=>{
         
         var search=window.location.pathname.replace("/search-page/:",""); 
-    Axios.get(`https://cigi.herokuapp.com/search-page/:${search}`)
+    Axios.get(`http://cigi.games/search-page/:${search}`)
     .then((res)=>{
         const alldata=res.data.result;
       

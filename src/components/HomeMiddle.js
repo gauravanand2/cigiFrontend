@@ -7,7 +7,7 @@ function HomeMiddle(){
     
    const getNewData=()=>{
        
-   Axios.get("https://cigi.herokuapp.com/all")
+   Axios.get("http://cigi.games/all")
    .then((res)=>{
        const alldata=res.data.result;
        setNewdata(Object.values(alldata));
