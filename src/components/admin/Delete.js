@@ -8,7 +8,7 @@ function Delete(){
     
     const getStockData=()=>{
         
-    Axios.get("http://cigi.games/admin/check")
+    Axios.get("https://cigi.games/admin/check")
     .then((res)=>{
         const alldata=res.data.result;
         setStockdata(Object.values(alldata));
@@ -20,7 +20,7 @@ function Delete(){
       const id=val.id;    
      console.log(id);
       if(window.confirm(`Are your sure you want to Delete ${val.name} !!!`)){
-      Axios.delete(`http://cigi.games/admin/delete/:${id}`,
+      Axios.delete(`https://cigi.games/admin/delete/:${id}`,
       {params: { id: id } }
    
     ).then((response)=>{

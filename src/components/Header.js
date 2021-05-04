@@ -18,14 +18,14 @@ function Header(props){
       alert("Please Enter Your Username And Password");
     }
     else{
-      Axios.post("http://cigi.games/add-subscriber",{
+      Axios.post("https://cigi.games/add-subscriber",{
         email:userEmail
       }).then((resposne)=>{
           alert("Subscribed!!!!!!!!!");
           setUserEmail("");
       })
     }
-    Axios.post("http://cigi.games/add-subscriber",{email:userEmail})
+    Axios.post("https://cigi.games/add-subscriber",{email:userEmail})
   }
     return(
         <div className="ab-container">
