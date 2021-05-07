@@ -27,9 +27,9 @@ function HomeMiddle(){
         <div className=" row">
         {
           newData.map((item ,index)=>(
-            <div className="col-lg-3 col-md-4 col-6 ">
+            <div className="col-lg-3 col-md-4 col-sm-6 col-12">
             <div className="card mb-4 movie-card">
-            <img src={item.pic} alt="content"  className="content-img"/>
+            <img src={item.pic} alt="Free Download MOVIE , SONGS , WEB SERIES"  className="content-img"/>
             <div className="card-body">
                               <h5 className="card-title nav-text">{item.name}</h5>
                               <p className="card-text regular-text">{item.description}</p>

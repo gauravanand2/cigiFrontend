@@ -389,4 +389,12 @@ div.a {
  .sharelink{
         margin-left: 1rem;
       }
-      
+  /*about-us*/
+
+  .about-us i{
+    font-size: 2rem;
+    color: #980106;
+  }
+  .about-us .fb{
+    margin-left: 0.5rem;
+  }

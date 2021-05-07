@@ -5,7 +5,7 @@ import LoginContext from './components/admin/LoginContext';
 
 export const ProtectedRoute=({component:Component,...rest})=>{
    const {auth}=useContext(LoginContext);
-  console.log(auth);
+
     return(
         <Route 
         {...rest} 

@@ -12,17 +12,14 @@ function Footer(){
                        <ul className="nav-text">
                           <li className="mb-2 "><Link to="/">Home</Link></li>
                           <li className="mb-2"><Link to="/about-us">ABOUT US</Link></li>
-                          <li><Link to="/contact-us">CONTACT US</Link></li>
+                          
                        </ul>
-                    
-                      
-                      
                       
                     </div>
                     <div className="col-4">
                        <h3 className="mb-4 nav-text">Follow Links :</h3>
-                     <Link to="https://www.instagram.com/"> <i className="fa fa-instagram" ></i></Link>
-                     <Link to="https://www.facebook.com/"> <i className="fa fa-facebook-official" ></i></Link>
+                     <a href="https://instagram.com/cigi_23?igshid=hxkxrouixcuk"> <i className="fa fa-instagram" ></i></a>
+                     <a href="https://www.facebook.com/profile.php?id=100067702443517"> <i className="fa fa-facebook-official" ></i></a>
                     </div>
                     <div className="col-4">
                     <ul className="nav-text">

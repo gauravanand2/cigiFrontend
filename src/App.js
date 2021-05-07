@@ -2,7 +2,6 @@
 import './App.css';
 import React,{useState} from 'react';
 import  {Route,Switch} from 'react-router-dom';
-import Advertisement from './components/Advertisement';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Login from './components/admin/Login';
@@ -19,6 +18,7 @@ import Delete from './components/admin/Delete';
 import Modify from './components/admin/Modify';
 import SpecificUpdate from './components/admin/SpecificUpdate';
 import SearchPage from './components/SearchPage';
+import AboutUs from './components/AboutUs';
 
 
 
@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Advertisement />
+    
       <Switch>
         <Route exact path="/" component={HomeMiddle} />
         <Route exact path="/movies" component={Movies} />
@@ -35,6 +35,7 @@ function App() {
         <Route exact path="/web-series" component={WebSeries} />
         <Route exact path="/download/:id" component={Viewpage} />
         <Route exact path="/search-page/:search" component={SearchPage} />
+        <Route exact path="/about-us" component={AboutUs} />
         <LoginContext.Provider value={{auth,setAuth}}>
         <Route exact path="/admin/login-form" component={Login} />
         <ProtectedRoute exact path="/admin/dashboard" component={Dashboard} />

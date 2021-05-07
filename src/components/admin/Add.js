@@ -12,6 +12,7 @@ function AddMovie(){
     const [pic,setPic]=useState(null);
     const [description,setDescription]=useState('');
     const [year,setYear]=useState('');
+    const [cast,setCast]=useState('') 
     const addMo=(event)=>{
       event.preventDefault();
       var category=[];
@@ -35,6 +36,7 @@ function AddMovie(){
           formData.append('pic',pic);
           formData.append('year',year);
           formData.append('language',language);
+          formData.append('cast',cast);
           Axios.post('https://cigi.games/api/admin/add',formData,{
             headers:{
               'Content-Type':'multipart/form-data'
@@ -48,6 +50,7 @@ function AddMovie(){
           setLink('');
           setYear('');
           setLanguage('');
+          setCast('');
               
               document.getElementById("picfile").value=null;
              for(var data of markedCategory){
@@ -78,6 +81,9 @@ function AddMovie(){
               
               <label htmlFor="link" className="form-label add page-heading ">Movie Link *</label>
               <input type="text" id="link" value={link} className="form-control" onChange={(e)=>setLink(e.target.value)} required/>
+
+              <label htmlFor="cast" className="form-label add page-heading ">Cast *</label>
+               <input type="text" id="cast" value={cast} className="form-control" onChange={(e)=>setCast(e.target.value)} required />
 
               <label htmlFor="pic" className="add page-heading">Banner</label>
               <input type="file" className="form-control" name="select-file" id="picfile" accept="image/*"  onChange={(e)=>setPic(e.target.files[0])} />
@@ -133,6 +139,66 @@ function AddMovie(){
             </label>
           </div>
           <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="Animated" value="Animated" />
+            <label className="form-check-label" htmlFor="Animated">
+            Animated
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="Fantasy" value="Fantasy" />
+            <label className="form-check-label" htmlFor="Fantasy">
+            Fantasy
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="Crime" value="Crime" />
+            <label className="form-check-label" htmlFor="Crime">
+            Crime
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="Thriller" value="Thriller" />
+            <label className="form-check-label" htmlFor="Thriller">
+            Thriller
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="Family" value="Family" />
+            <label className="form-check-label" htmlFor="Family">
+            Family
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="Emotional" value="Emotional" />
+            <label className="form-check-label" htmlFor="Emotional">
+            Emotional
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="History" value="History" />
+            <label className="form-check-label" htmlFor="History">
+            History
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="Sci-Fi" value="Sci-Fi" />
+            <label className="form-check-label" htmlFor="Sci-Fi">
+            Sci-Fi
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="Mystery" value="Mystery" />
+            <label className="form-check-label" htmlFor="Mystery">
+            Mystery
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" name="select-category" id="18" value="18+" />
+            <label className="form-check-label" htmlFor="18">
+            18+
+            </label>
+          </div>
+          <div className="form-check">
             <input className="form-check-input" type="checkbox" name="select-category" id="Comedy" value="Comedy" />
             <label className="form-check-label" htmlFor="Comedy">
             Comedy
@@ -163,9 +229,9 @@ function AddMovie(){
                 </label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" name="select-category" id="Romantic" value="Romantic" required />
-                <label className="form-check-label" htmlFor="Romantic">
-                Romantic
+                <input className="form-check-input" type="checkbox" name="select-category" id="Romance" value="Romance" required />
+                <label className="form-check-label" htmlFor="Romance">
+                Romance
                 </label>
               </div>
               <div className="form-check">

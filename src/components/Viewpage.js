@@ -12,6 +12,7 @@ function Viewpage(){
   const [year,setYear]=useState('');
   const [language,setLanguage]=useState('');
   const [category,setCategory]=useState('');
+  const [cast,setCast]=useState('');
 
   var id=window.location.pathname.replace("/download/:","");
   function getSpecificContent(){
@@ -23,8 +24,9 @@ function Viewpage(){
           setPic(data.pic);
           setLink(data.link);
           setLanguage(data.language);
-          setCategory(date.category);
+          setCategory(data.category);
           setYear(data.year);
+          setCast(data.cast);
       })
       var date= new Date(year)
 
@@ -33,29 +35,31 @@ function Viewpage(){
   useEffect(()=>{
       getSpecificContent();
   
-  });
+  },[]);
     return(
     <div className="container my-5">
+      <h3 className="page-heading mb-4">Free Download MOVIE , SONGS , WEB SERIES</h3>
         <div className="row justify-content-center">
   <div className="col-lg-4 col-md-6 col-12">
-    <img src={pic} alt="content-pic" />
+    <img src={pic} alt="Free Download MOVIE , SONGS , WEB SERIES" />
   </div>
   <div className="col-lg-8 col-md-6 col-12 mt-4">
     <h3 className="page-heading">{name}</h3>
     <h6 className="page-heading">Year: {year}</h6>
     <h6 className="page-heading">Category: {category}</h6>
      <h6 className="page-heading">Language: {language}</h6>
+     <h6 className="page-heading">{cast}</h6>
      <p>{description}</p>
  
      <a href={link} className="btn btn-outline-danger btn-block" target="_blank" rel="noreferrer"><i className="fa fa-download" aria-hidden="true" ></i>&nbsp; DOWNLOAD</a>
      <div className="share-div mt-3 mb-3">
                 <h5>Share To :</h5>
                 <WhatsappShareButton
-                   url={`http://localhost:3000/download/:${id}`}>
+                   url={`https://cigi.games/download/:${id}`}>
                    <WhatsappIcon  round={true} size={35}/>
               </WhatsappShareButton>
                 <FacebookShareButton className="sharelink"
-                  url={`http://localhost:3000/download/:${id}`}>
+                  url={`https://cigi.games/download/:${id}`}>
                   <FacebookIcon round={true} size={35}/>
                 </FacebookShareButton>
               </div>
